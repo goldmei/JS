@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新窗口打开网站</title>
+    <script type="text/javascript">
+        function openWindow(){
+        // 新窗口打开时弹出确认框，是否打开
+            var con = confirm("确定框");
+            if (con == true){
+                // 通过输入对话框，确定打开的网址，默认为 http://blog.csdn.net/u011712163
+                var url = prompt("确定打开的网址","http://blog.csdn.net/u011712163");
+                //打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。
+                window.open(url,"_blank","width=400,height=500,menubar=no,toolbar=no")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="新窗口打开网站" onclick="openWindow()" />
+</body>
+</html>

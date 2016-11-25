@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关闭窗口</title>
+    <script type="text/javascript">
+        /*
+         close()关闭窗口
+
+         用法：
+         window.close();   //关闭本窗口
+         或
+         <窗口对象>.close();   //关闭指定的窗口
+         */
+        var mywin;
+        function windowOpen(){
+            mywin = window.open("http://blog.csdn.net/u011712163",'_blank','height=600,width=400,top=100,left=0');
+        }
+
+        function windowClose(){
+            mywin.close();
+        }
+    </script>
+</head>
+<body>
+    <input name="button1" type="button" onclick="windowOpen()" value="打开新窗口" />
+    <input name="button2" type="button" onclick="windowClose()" value="关闭窗口" />
+</body>
+</html>

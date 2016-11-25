@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认消息对话框</title>
+    <script type="text/javascript">
+        /*
+         confirm 消息对话框通常用于允许用户做选择的动作，如：“你对吗？”等。弹出对话框(包括一个确定按钮和一个取消按钮)。
+
+         语法:
+         confirm(str);
+
+         参数说明:
+         str：在消息对话框中要显示的文本
+         返回值: Boolean值
+
+         返回值:
+         当用户点击"确定"按钮时，返回true
+         当用户点击"取消"按钮时，返回false
+
+         注: 通过返回值可以判断用户点击了什么按钮
+         */
+        function rec(){
+            var mymessage = confirm("你喜欢JS吗？");
+            if (mymessage == true){
+                document.write("你喜欢JS！");
+            } else {
+                document.write("你不喜欢JS,没关系跟着军哥学习JS你会喜欢上它的！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input name="button" type="button" onclick="rec()" value="点击我弹出确认对话框">
+</body>
+</html>
